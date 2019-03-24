@@ -220,6 +220,7 @@
             this.ResultlistBox.Name = "ResultlistBox";
             this.ResultlistBox.Size = new System.Drawing.Size(481, 124);
             this.ResultlistBox.TabIndex = 5;
+            this.ResultlistBox.SelectedIndexChanged += new System.EventHandler(this.ResultlistBox_SelectedIndexChanged);
             // 
             // button3
             // 
@@ -251,11 +252,11 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(719, 263);
+            this.button4.Location = new System.Drawing.Point(719, 250);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(51, 34);
+            this.button4.Size = new System.Drawing.Size(68, 47);
             this.button4.TabIndex = 17;
-            this.button4.Text = "?";
+            this.button4.Text = "Check";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -291,6 +292,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(837, 493);
             this.Controls.Add(this.savebutton);
             this.Controls.Add(this.label5);

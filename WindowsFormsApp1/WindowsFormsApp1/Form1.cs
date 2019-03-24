@@ -21,7 +21,23 @@ namespace WindowsFormsApp1
 
         private void button4_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("please select a country by doubleclicking in the list provided");
+            // MessageBox.Show("please select a country by doubleclicking in the list provided");
+            if (ResultlistBox.SelectedIndex != -1)
+            {
+
+                cost = s.Price;
+                weather = s.Temperature;
+
+                pricelabel.Text = cost.ToString("c");
+                Temperaturelabel.Text = weather.ToString("");
+
+              
+
+            }
+            else
+            {
+                MessageBox.Show("ok");
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -197,7 +213,7 @@ namespace WindowsFormsApp1
         }
         //find the cost for a week corresponding to the selected country
 
-        public void ResullisttboxSelectedindex_DoubleClick(object sender, EventArgs e)
+        public void ResullisttboxSelectedindex_Click(object sender, EventArgs e)
 
         {
            
@@ -267,6 +283,11 @@ namespace WindowsFormsApp1
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ResultlistBox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
